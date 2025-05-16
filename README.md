@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+🕵️‍♂️ Cyber Sleuth Guard – AI-Powered Vulnerability Scanner
+Cyber Sleuth Guard is an AI-driven web-based security agent that scans websites for real vulnerabilities—without false positives. This project simulates a real-time ethical hacker assistant that analyzes web pages, identifies security risks, and generates a comprehensive report with actionable insights.
 
-## Project info
+🌐 Live Preview: https://cyber-sleuth-guard.lovable.app/
 
-**URL**: https://lovable.dev/projects/ae0a6eac-eb64-48fa-9fc1-53c82b716891
+🚀 Features
+🔎 Real-time intelligent vulnerability scanning
 
-## How can I edit this code?
+🤖 AI agent SleuthBot with interactive feedback
 
-There are several ways of editing your application.
+📋 Detailed scan reports: XSS, SQLi, headers, SSL, misconfigurations
 
-**Use Lovable**
+📄 Downloadable PDF scan reports
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ae0a6eac-eb64-48fa-9fc1-53c82b716891) and start prompting.
+⚡ Zero false positives – trustable results only
 
-Changes made via Lovable will be committed automatically to this repo.
+🧠 Ready for backend AI/ML integration (FastAPI, OWASP ZAP, etc.)
 
-**Use your preferred IDE**
+🧱 Project Structure
+csharp
+Copy
+Edit
+cyber-sleuth-guard/
+├── components/          # React UI components
+│   ├── AgentResponse.jsx
+│   ├── ScanInput.jsx
+│   └── ReportCard.jsx
+├── pages/
+│   ├── index.jsx        # Landing page
+│   └── scan.jsx         # Main scan interface
+├── utils/
+│   └── scanMocks.js     # Simulated scan results
+├── public/
+├── styles/
+└── tailwind.config.js
+🖌️ Tech Stack
+Frontend: React + Tailwind CSS + Vite
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+UI Library: shadcn/ui
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Animations: Framer Motion
 
-Follow these steps:
+Deployment: Lovable.dev
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+(Optional) Backend (Future Ready): FastAPI, OWASP ZAP, nmap, Wapiti
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+📥 Installation (for local development)
+bash
+Copy
+Edit
+# Step 1: Clone the repository
+git clone https://github.com/yourusername/cyber-sleuth-guard.git
+cd cyber-sleuth-guard
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 2: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 3: Run the development server
 npm run dev
-```
+🧠 How It Works
+User inputs any public website URL
 
-**Edit a file directly in GitHub**
+SleuthBot (the AI Agent) scans and analyzes the site
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The agent outputs:
 
-**Use GitHub Codespaces**
+Identified vulnerabilities (XSS, SQLi, etc.)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Affected endpoints
 
-## What technologies are used for this project?
+Recommended fixes
 
-This project is built with:
+A downloadable PDF report is generated
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🎯 Future Roadmap
+✅ Real scan engine using OWASP ZAP or Wapiti via FastAPI
 
-## How can I deploy this project?
+🧠 GPT-powered AI explanation of findings
 
-Simply open [Lovable](https://lovable.dev/projects/ae0a6eac-eb64-48fa-9fc1-53c82b716891) and click on Share -> Publish.
+🔐 Admin dashboard for past scans and analytics
 
-## Can I connect a custom domain to my Lovable project?
+📧 Email alerts for new threats
 
-Yes, you can!
+📄 License
+This project is open-source under the MIT License.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+👨‍💻 Author
+Made with ❤️ by Aryan Shukla
+GitHub: @Aryanshukla578
